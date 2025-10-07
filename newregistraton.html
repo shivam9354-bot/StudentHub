@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Animated Registration Page</title>
+ <link rel="stylesheet" href="newregistration.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Page</h2>
+    <div class="role-boxes" id="roleSelector">
+      <label class="role-checkbox">Teacher
+        <input type="radio" name="role" id="role-teacher" onclick="showForm('teacher')">
+        <span class="checkmark"></span>
+      </label>
+      <label class="role-checkbox">Student
+        <input type="radio" name="role" id="role-student" onclick="showForm('student')">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+<div class="formmain">
+    <!-- Teacher Form -->
+     <div class="teacherdiv">
+    <form class="form-section" id="teacher-form">
+      <label for="teacher-name">Name</label>
+      <input type="text" id="teacher-name" name="teacher-name" required>
+      <label for="teacher-email">Email</label>
+      <input type="email" id="teacher-email" name="teacher-email" required>
+      <button type="submit">Register as Teacher</button>
+    </form>
+</div> <!-- teacher div close  -->
+    <!-- Student Form -->
+     <div class="studentform">
+    <form class="form-section" id="student-form" >
+      <label for="student-name">Name</label>
+      <input type="text" id="student-name" name="student-name" required>
+      <label for="student-email">Email ID</label>
+      <input type="email" id="student-email" name="student-email" required>
+      <label for="branch">Branch</label>
+      <select id="branch" name="branch" required>
+        <option value="">Select Branch</option>
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="CIVIL">CIVIL</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="ELECTRICAL">ELECTRICAL</option>
+        <option value="ELECTRONICS">ELECTRONICS</option>
+        <option value="AGRICULTURE">AGRICULTURE</option>
+        <option value="PHARMACY">PHARMACY</option>
+        <option value="CHEMICAL/CHEMICAL PAINT">CHEMICAL/CHEMICAL PAINT </option>
+      </select>
+      <label for="year">Year</label>
+      <select id="year" name="year" required>
+        <option value="">Select Year</option>
+        <option value="First">First</option>
+        <option value="Second">Second</option>
+        <option value="Third">Third</option>
+      </select>
+      <label for="project">Project Title</label>
+      <input type="text" id="project" name="project" required>
+      <label for="description">Project Description</label>
+      <textarea id="description" name="description" rows="3" required></textarea>
+      <label for="achievement">Achievement</label>
+      <input type="text" id="achievement" name="achievement">
+      <button type="submit">Register as Student</button>
+    </form>
+    </div> <!-- student div close  -->
+  </div>  <!-- form main close  -->
+  <script src="newregistration.js"></script>
+  
+</body>
+</html>
