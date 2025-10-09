@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp Web Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FontAwesome for icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="chatpage.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <img src="https://via.placeholder.com/38x38/333/ddd?text=U" class="avatar" style="border-radius:50%;" />
+      <span>Your name</span>
+      <span>
+        <i class="fa-solid fa-circle-notch"></i>
+        <i class="fa-solid fa-message"></i>
+        <i class="fa-solid fa-ellipsis-v"></i>
+      </span>
+    </div>
+    <div class="sidebar-search">
+      <i class="fa-solid fa-magnifying-glass" style="margin-right:10px;color:#8696a0;"></i>
+      <input type="text" placeholder="Search or start new chat">
+    </div>
+    <div class="chats">
+      <div class="chat-item active">
+        <img src="https://randomuser.me/api/portraits/men/61.jpg" />
+        <div class="chat-details">
+          <div class="name">Devansh</div>
+          <div class="subtitle">🖼 Image</div>
+        </div>
+        <div class="chat-meta">11:06</div>
+      </div>
+      <div class="chat-item">
+        <img src="https://randomuser.me/api/portraits/women/78.jpg" />
+        <div class="chat-details">
+          <div class="name">Jarul Batchit</div>
+          <div class="subtitle">background: linear-gradient</div>
+        </div>
+        <div class="chat-meta">10:47</div>
+      </div>
+      <div class="chat-item">
+        <img src="https://randomuser.me/api/portraits/men/36.jpg" />
+        <div class="chat-details">
+          <div class="name">CSE Batch</div>
+          <div class="subtitle">Practical files or assignments</div>
+        </div>
+        <div class="chat-meta">09:58</div>
+      </div>
+      <!-- add more contacts to match the original UI -->
+    </div>
+  </div>
+  
+  <div class="main">
+    <div class="main-header">
+      <div style="display:flex;align-items:center;">
+        <img src="background.jpg" class="avatar" />
+      </div>
+      <div class="main-header-icons">
+        <i class="fa-solid fa-video"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-search"></i>
+        <i class="fa-solid fa-ellipsis-v"></i>
+      </div>
+    </div>
+    <div class="chat-area" id="chat-area">
+      <div class="msg">hi</div>
+      <div class="msg sent">hello </div>
+      <div class="msg">how are you  <br> are you free ?
+    </div>
+      <div class="msg sent">yeah i am free  </div>
+      <!-- Add more messages for real WhatsApp UI feel -->
+    </div>
+    <div class="main-footer">
+      <i class="fa-regular fa-face-smile" style="font-size:1.4rem;margin-right:8px;color:#8696a0;"></i>
+      <input type="text" placeholder="Type a message" id="main-input" autocomplete="off">
+      <button class="send-btn" id="send-btn">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+  <script src="chatpage.js">
+  </script>
+</body>
+</html>
